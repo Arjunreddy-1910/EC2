@@ -15,3 +15,8 @@ variable "instance_type_ec2" {
     type = string
   
 }
+variable "vpc_security_group_ids" {
+    description = "This is used to specify the vpc security groupid"
+    type = string
+  
+}
