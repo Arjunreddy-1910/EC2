@@ -12,34 +12,39 @@ description = "this has aws scret access key"
 variable "aws_region" {
     description = "this specifies about the region in which the deployment has to be done"
     type = string
-    
+
   
 }
 variable "ami_name" {
     description = "this is used to specify the ami used to launch the instance"
     type = string
+    default = "ami-0b09ffb6d8b58ca91"
   
 }
 
 variable "subnet_id_value" {
     description = "This is used to specify in which subnet the ec2 instance has to be launched"
     type = string
+    default = "sg-07d6e33811d838c87"
   
 }
 
 variable "instance_type_ec2" {
     description = "This is used to specify the type of instance that will be launched"
     type = string
+    default = "t2.micro"
   
 }
 variable "vpc_security_group_ids" {
     description = "This is used to specify the vpc security groupid"
     type = string
+    default = ""
   
 }
 
 variable "name_tag" {
    type        = string
    description = "Name of the EC2 instance"
+   default = "Jenkins-demo"
    
 }
